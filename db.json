@@ -1,13 +1,13 @@
 {
   "product": [
     {
-      "name": "екуркуц",
-      "count": "некренурелншленкнеаш",
+      "name": "Shovel",
+      "count": "1000",
       "size": {
-        "width": "рекуреку",
-        "height": "реуреун"
+        "width": "150",
+        "height": "1500"
       },
-      "weight": "лгшкк g",
+      "weight": "400 g",
       "imageUrl": "https://via.placeholder.com/600/771796",
       "comments": [
         "CommentModel",
@@ -16,13 +16,13 @@
       "id": 1
     },
     {
-      "name": "йцуйц",
-      "count": "йцуйцу",
+      "name": "Light bulb",
+      "count": "6402",
       "size": {
-        "width": "йцуйцу",
-        "height": "йцуйцу"
+        "width": "50",
+        "height": "70"
       },
-      "weight": "йцуйцу g",
+      "weight": "10 g",
       "imageUrl": "https://via.placeholder.com/600/771796",
       "comments": [
         "CommentModel",
@@ -33,22 +33,28 @@
   ],
   "comments": [
     {
-      "description": "I like itqweqwe",
+      "description": "I like it so much",
       "date": "23:20 30.11.2021",
       "productId": "1",
       "id": 4
     },
     {
-      "description": "I like itйцуйцу",
+      "description": "I like it. This is great.",
       "date": "0:7 31.11.2021",
       "productId": 2,
       "id": 7
     },
     {
-      "description": "I like it",
+      "description": "Awesome shovel!",
       "date": "0:7 31.11.2021",
       "productId": 1,
       "id": 8
+    },
+    {
+      "description": "Awesome bulb!",
+      "date": "0:7 30.11.2021",
+      "productId": 2,
+      "id": 9
     }
   ]
 }

@@ -120,6 +120,7 @@ form div button {
     width: 4vw !important;
     cursor: pointer;
     transition: .2s;
+    background: rgba(255, 255, 255, 0.3);
 }
 .delete-block:hover, .edit:hover {
     background: rgba(255, 50, 50, 0.7);
