@@ -2,7 +2,7 @@ import {useState} from "react";
 import {Link, useHistory} from "react-router-dom";
 
 const CreateNewProduct = () => {
-    const [imageUrl, setImageUrl] = useState('https://bit.ly/3HDP9oT');
+    const [imageUrl, setImageUrl] = useState('https://via.placeholder.com/600/771796');
     const [name, setName] = useState('');
     const [amount, setAmount] = useState('');
     const [width, setWidth] = useState('');
