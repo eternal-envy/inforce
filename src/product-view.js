@@ -4,7 +4,7 @@ import {useState} from "react";
 
 const ProductView = () => {
     const { id } = useParams();
-    const { data: product, isLoading } = useFetchData('http://localhost:8000/product/' + id + '?_embed=comments');
+    const { data: product, isLoading } = useFetchData('https://my-json-server.typicode.com/eternal-envy/inforce/product' + id + '?_embed=comments');
     const history = useHistory();
     const [comment, setComment] = useState('I like it');
     const handleSubmit = (e) => {
@@ -14,7 +14,7 @@ const ProductView = () => {
 
         const commentObject = {description: comment, date, productId: product.id};
 
-        fetch('http://localhost:8000/comments',{
+        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/comments',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(commentObject)
@@ -22,7 +22,7 @@ const ProductView = () => {
     }
 
     const deleteBlock = () => {
-        fetch('http://localhost:8000/product/' + id, {
+        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/product' + id, {
             method: 'DELETE'
         }).then (() => history.push('/'))
     }

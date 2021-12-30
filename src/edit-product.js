@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 
 const EditProduct = () => {
     const { id } = useParams();
-    let { data: product, isLoading } = useFetchData('http://localhost:8000/product/' + id);
+    let { data: product, isLoading } = useFetchData('https://my-json-server.typicode.com/eternal-envy/inforce/product/' + id);
     const [imageUrl, setImageUrl] = useState('');
     const [name, setName] = useState('');
     const [amount, setAmount] = useState('');
@@ -28,7 +28,7 @@ const EditProduct = () => {
         e.preventDefault();
         const product = {name, count: amount, size: {width, height}, weight, imageUrl};
 
-        fetch('http://localhost:8000/product/' + id, {
+        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/product/' + id, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)

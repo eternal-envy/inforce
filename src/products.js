@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 const ProductsList = ({ products }) => {
 
     const deleteBlock = (id) => {
-        fetch('http://localhost:8000/product/' + id,{
+        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/product/' + id,{
             method: 'DELETE'
         }).then (() => window.location.reload())
     }

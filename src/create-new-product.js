@@ -15,7 +15,7 @@ const CreateNewProduct = () => {
         e.preventDefault();
         const product = {name, count: amount, size: {width, height}, weight, imageUrl, comments: ["CommentModel", "CommentModel"]};
 
-        fetch('http://localhost:8000/product', {
+        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/product', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)
