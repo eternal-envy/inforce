@@ -22,12 +22,12 @@ const ProductView = () => {
     }
 
     const deleteBlock = () => {
-        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/product' + id, {
+        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/product/' + id, {
             method: 'DELETE'
         }).then (() => history.push('/'))
     }
     const deleteComment = (id) => {
-        fetch('http://localhost:8000/comments/' + id,{
+        fetch('https://my-json-server.typicode.com/eternal-envy/inforce/comments/' + id,{
             method: 'DELETE'
         }).then (() => window.location.reload())
     }
