@@ -4,7 +4,7 @@ import {useState} from "react";
 
 const ProductView = () => {
     const { id } = useParams();
-    const { data: product, isLoading } = useFetchData('https://my-json-server.typicode.com/eternal-envy/inforce/product' + id + '?_embed=comments');
+    const { data: product, isLoading } = useFetchData('https://my-json-server.typicode.com/eternal-envy/inforce/product/' + id + '?_embed=comments');
     const history = useHistory();
     const [comment, setComment] = useState('I like it');
     const handleSubmit = (e) => {
