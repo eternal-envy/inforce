@@ -35,7 +35,7 @@
     {
       "description": "I like it so much",
       "date": "23:20 30.11.2021",
-      "productId": "1",
+      "productId": 1,
       "id": 4
     },
     {
