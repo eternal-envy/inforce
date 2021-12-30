@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    font-family: "Roboto Thin", sans-serif;
+}
+
+nav {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a {
+    transition: .3s;
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+h1 a:hover {
+    color: #ff2121;
+}
+
+button {
+    padding: 1rem;
+    border: 0;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    transition: .3s;
+}
+button:hover {
+    background: #ff2121;
+}
+
+.content {
+    padding: 2rem 5%;
+}
+.product-list {
+    width: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.product-preview {
+    cursor: pointer;
+    position: relative;
+}
+.product-preview button {
+    padding: 0;
+    background: transparent;
+    opacity: 0;
+}
+.product-preview a {
+    transition: .2s;
+}
+.product-preview:hover {
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+    color: #ff2121;
+}
+.product-preview:hover button {
+    opacity: 1;
+}
+
+.product-preview a:hover {
+    color: #ff2121;
+}
+img {
+    width: 100%;
+}
+
+.product-container {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+.product-container img {
+    width: 30%;
+}
+.captions {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vh;
+    line-height: 6vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vh;
+}
+label {
+    font-size: 2vh;
+}
+input {
+    margin: 1rem 0;
+    display: block;
+    width: 30vw;
+    height: 5vh;
+    border: 0.1rem solid rgba(255, 50, 50, 0.4);
+    border-radius: 10px;
+}
+input:focus, textarea:focus {
+    background: rgba(255, 21, 21, 0.1);
+}
+form div {
+    display: flex;
+    gap: 1rem;
+}
+form div button {
+    width: 10vw;
+    padding: 1vh 1vw;
+    font-size: 2vh;
+}
+.delete-block, .edit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4vw !important;
+    cursor: pointer;
+    transition: .2s;
+}
+.delete-block:hover, .edit:hover {
+    background: rgba(255, 50, 50, 0.7);
+}
+.edit {
+    right: 4.5vw;
+}
+
+.comments-container {
+    padding: 2rem 0;
+}
+.description {
+    font-size: 3vh;
+    font-weight: 500;
+    padding: 1vh 0;
+}
+.time {
+    font-size: 1.5vh;
+    color: darkgrey;
+}
+.comment {
+    position: relative;
+}
+.comment img {
+    width: 2vw !important;
+}
+.comment-form form {
+    flex-direction: column;
+    align-items: flex-start;
+}
+textarea {
+    border: 0.1rem solid rgba(255,50,50,0.4);
+    width: 100%;
+    height: 10vh;
+    resize: none;
+    margin: 1rem 0;
+}

@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "name": "екуркуц",
+      "count": "некренурелншленкнеаш",
+      "size": {
+        "width": "рекуреку",
+        "height": "реуреун"
+      },
+      "weight": "лгшкк g",
+      "imageUrl": "https://bit.ly/3HDP9oT",
+      "comments": [
+        "CommentModel",
+        "CommentModel"
+      ],
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 3,
+      "productId": 1,
+      "description": "some text here",
+      "date": "14:00 22.08.2021"
+    },
+    {
+      "description": "I like itqweqwe",
+      "date": "23:20 30.11.2021",
+      "productId": "1",
+      "id": 4
+    },
+    {
+      "description": "I like it",
+      "date": "23:21 30.11.2021",
+      "productId": 1,
+      "id": 6
+    }
+  ]
+}
